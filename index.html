@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marketingenlinea.com - Convierte cada contacto en una venta</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind: bg-slate-50 */
+            color: #334155; /* Tailwind: text-slate-700 */
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-center mb-8 text-sky-800;
+        }
+        .card {
+            @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+        }
+        .btn-primary {
+            @apply bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 shadow-md hover:shadow-lg;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-sky-700">marketingenlinea.com</a>
+            <nav>
+                <!-- Navigation links could go here if needed, for this single page, it's minimal -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-sky-600 to-cyan-500 text-white py-16 md:py-24 text-center rounded-b-3xl shadow-xl">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+                Tu negocio ya es líder en el mundo físico. Es hora de dominar el mundo digital.
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-8 opacity-90">
+                Una sola plataforma con tu marca, que automatiza tus ventas, acelera tus procesos y pone tu empresa al frente… sin contratar más personal.
+            </p>
+            <a href="#cta" class="btn-primary">
+                📆 Agenda una demo gratuita
+            </a>
+        </div>
+    </section>
+
+    <!-- Slogan Section -->
+    <section class="py-12 md:py-16 bg-slate-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-semibold text-sky-800">
+                Convierte cada contacto en una venta.
+            </h2>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">✨ ¿Qué puede hacer por tu empresa?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">😴</span> <!-- Emoji for icon -->
+                        <h3 class="text-xl font-semibold text-sky-700">Captura prospectos mientras duermes</h3>
+                    </div>
+                    <p class="text-slate-600">Tus páginas, formularios y WhatsApp seguirán trabajando incluso fuera de horario.</p>
+                </div>
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">🔍</span> <!-- Emoji for icon -->
+                        <h3 class="text-xl font-semibold text-sky-700">Nunca más pierdas un cliente interesado</h3>
+                    </div>
+                    <p class="text-slate-600">Sigue cada contacto con un embudo visual y recordatorios automáticos.</p>
+                </div>
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">💬</span> <!-- Emoji for icon -->
+                        <h3 class="text-xl font-semibold text-sky-700">Automatiza respuestas y citas sin perder el toque humano</h3>
+                    </div>
+                    <p class="text-slate-600">Responde con velocidad profesional. Cada cliente siente que hablas solo con él.</p>
+                </div>
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">🚀</span> <!-- Emoji for icon -->
+                        <h3 class="text-xl font-semibold text-sky-700">Lanza campañas sin depender de nadie</h3>
+                    </div>
+                    <p class="text-slate-600">Promociona equipos, ofertas o eventos con correos y mensajes personalizados en segundos.</p>
+                </div>
+                <div class="card lg:col-span-2 mx-auto max-w-2xl">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">📊</span> <!-- Emoji for icon -->
+                        <h3 class="text-xl font-semibold text-sky-700">Toma el control total del proceso comercial</h3>
+                    </div>
+                    <p class="text-slate-600">Desde el primer clic hasta el cierre de la venta: todo en una sola plataforma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 md:py-20 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">🏆 ¿Por qué nuestros clientes eligen esta solución?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card flex items-start">
+                    <span class="text-2xl mr-3 text-sky-600">✔️</span>
+                    <p class="text-lg text-slate-700">No necesitan contratar más personal.</p>
+                </div>
+                <div class="card flex items-start">
+                    <span class="text-2xl mr-3 text-sky-600">✔️</span>
+                    <p class="text-lg text-slate-700">Tienen control total sin depender de agencias.</p>
+                </div>
+                <div class="card flex items-start">
+                    <span class="text-2xl mr-3 text-sky-600">✔️</span>
+                    <p class="text-lg text-slate-700">Pueden ver resultados desde el primer mes.</p>
+                </div>
+                <div class="card flex items-start">
+                    <span class="text-2xl mr-3 text-sky-600">✔️</span>
+                    <p class="text-lg text-slate-700">Usan su propia marca, no la de un tercero.</p>
+                </div>
+                <div class="card flex items-start md:col-span-2 lg:col-span-1">
+                    <span class="text-2xl mr-3 text-sky-600">✔️</span>
+                    <p class="text-lg text-slate-700">Todo queda centralizado y ordenado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">💼 Diseñada para empresas que ya venden, pero quieren escalar.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                <div class="card">
+                    <div class="flex items-center mb-3">
+                        <span class="text-3xl mr-3 text-emerald-600">✅</span>
+                        <h3 class="text-xl font-semibold text-sky-700">Producto probado y buena reputación</h3>
+                    </div>
+                    <p class="text-slate-600">Esta solución es ideal para negocios que tienen un producto probado y buena reputación.</p>
+                </div>
+                <div class="card">
+                    <div class="flex items-center mb-3">
+                        <span class="text-3xl mr-3 text-emerald-600">✅</span>
+                        <h3 class="text-xl font-semibold text-sky-700">Invierten en fuerza comercial o ferias</h3>
+                    </div>
+                    <p class="text-slate-600">Ya invierten en fuerza comercial o ferias, pero sienten que el canal digital aún no despega.</p>
+                </div>
+                <div class="card md:col-span-2">
+                    <div class="flex items-center mb-3">
+                        <span class="text-3xl mr-3 text-emerald-600">✅</span>
+                        <h3 class="text-xl font-semibold text-sky-700">Quieren más orden, más leads, y menos desgaste operativo</h3>
+                    </div>
+                    <p class="text-slate-600">Buscan más orden, más leads, y menos desgaste operativo en sus procesos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section class="py-16 md:py-20 bg-slate-100">
+        <div class="container mx-auto px-4 text-center max-w-2xl">
+            <h2 class="section-title">💸 Inversión</h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+                <p class="text-2xl md:text-3xl font-bold text-sky-800 mb-4">
+                    Activación inicial personalizada: <span class="text-emerald-600">$350</span>
+                </p>
+                <p class="text-2xl md:text-3xl font-bold text-sky-800 mb-6">
+                    Plataforma mensual (marca blanca): <span class="text-emerald-600">$297</span>
+                </p>
+                <p class="text-lg text-slate-600 font-medium">
+                    Sin contratos forzosos. Resultados visibles desde el primer mes.
+                </p>
+            </div>
+            <p class="text-md text-slate-500">
+                *Precios sujetos a cambios. Consulta para ofertas personalizadas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="cta" class="bg-gradient-to-r from-sky-700 to-cyan-600 text-white py-16 md:py-24 text-center rounded-t-3xl shadow-xl">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                📆 Agenda una demo gratuita de 15 minutos
+            </h2>
+            <p class="text-xl md:text-2xl font-light mb-10 opacity-90">
+                Y descubre cómo tu empresa puede vender más, automatizarse y crecer sin complicaciones.
+            </p>
+            <a href="#" class="btn-primary bg-white text-sky-700 hover:bg-sky-50 hover:text-sky-800">
+                ¡Agenda tu demo ahora!
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 marketingenlinea.com. Todos los derechos reservados.</p>
+            <p class="mt-2 text-sm">Potenciado por IA para tu éxito digital.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
