@@ -1,212 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>marketingenlinea.com - Convierte cada contacto en una venta</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* Tailwind: bg-slate-50 */
-            color: #334155; /* Tailwind: text-slate-700 */
-        }
-        .section-title {
-            @apply text-3xl md:text-4xl font-bold text-center mb-8 text-sky-800;
-        }
-        .card {
-            @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
-        }
-        .btn-primary {
-            @apply bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 shadow-md hover:shadow-lg;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marketing en Línea · Aparece primero en Google Maps</title>
+<meta name="description" content="Ponemos a tu negocio en los 3 primeros de Google Maps en tu ciudad, con reseñas y WhatsApp que venden. Diagnóstico gratis en 48 horas.">
+<link rel="canonical" href="https://marketingenlinea.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b0b0f;--paper:#fffdf6;--hot:#ff3b30;--lime:#c6ff00;--blue:#1d4ed8;--mute:#5b5b66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:var(--ink);color:#fff}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-family:"Archivo Black";font-size:18px;letter-spacing:.5px}
+.logo span{color:var(--lime)}
+.btn{display:inline-block;background:var(--lime);color:var(--ink);font-weight:800;padding:14px 22px;border-radius:10px;text-decoration:none;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);cursor:pointer;font-size:16px}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+header .btn{padding:8px 14px;font-size:14px;box-shadow:none;border-color:var(--lime)}
+.hero{background:var(--ink);color:#fff;padding:48px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.kicker{display:inline-block;background:var(--hot);color:#fff;font-weight:800;padding:4px 10px;border-radius:6px;font-size:13px;letter-spacing:.5px;text-transform:uppercase}
+h1{font-family:"Archivo Black";font-size:clamp(34px,5vw,56px);line-height:1.05;margin:16px 0}
+h1 em{font-style:normal;color:var(--lime)}
+.hero p{font-size:19px;color:#d6d6de;max-width:520px;margin-bottom:26px}
+.rule{margin-top:18px;font-size:15px;color:#fff;font-weight:600}
+.rule b{background:var(--hot);padding:2px 6px;border-radius:4px}
+.maps{background:#fff;color:var(--ink);border-radius:16px;padding:16px;border:4px solid var(--lime);box-shadow:8px 8px 0 var(--hot)}
+.search{background:#f1f3f4;border-radius:24px;padding:10px 16px;font-size:14px;color:#444;margin-bottom:12px}
+.pin{display:flex;gap:12px;align-items:center;padding:10px;border-radius:10px;margin-bottom:6px;background:#f8f8f8}
+.pin .n{width:30px;height:30px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:800;flex:none}
+.pin small{display:block;color:#777;font-size:12px}
+.pin.you{background:#ffe8e6;border:2px dashed var(--hot);animation:shake 2.4s infinite}
+.pin.you .n{background:var(--hot)}
+.cut{text-align:center;font-size:12px;color:#888;margin:6px 0}
+@keyframes shake{0%,88%,100%{transform:none}91%{transform:translateX(-4px)}94%{transform:translateX(4px)}97%{transform:translateX(-2px)}}
+section{padding:64px 0}
+h2{font-family:"Archivo Black";font-size:clamp(26px,3.6vw,38px);line-height:1.1;margin-bottom:14px}
+.lead{font-size:18px;color:var(--mute);max-width:680px;margin-bottom:32px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:22px;box-shadow:5px 5px 0 var(--ink)}
+.card .big{font-family:"Archivo Black";font-size:34px;color:var(--hot)}
+.card h3{font-size:19px;margin:6px 0}
+.card p{color:var(--mute);font-size:15px}
+.band{background:var(--lime)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:18px}
+.step:before{counter-increment:s;content:counter(s);font-family:"Archivo Black";font-size:30px;color:var(--blue)}
+.step h3{font-size:17px;margin:4px 0}
+.step p{font-size:14px;color:var(--mute)}
+.book{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:center}
+.cover{height:280px;border-radius:8px;background:linear-gradient(160deg,var(--blue),var(--ink));color:#fff;padding:20px;display:flex;flex-direction:column;justify-content:space-between;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--lime)}
+.cover b{font-family:"Archivo Black";font-size:24px;line-height:1.05}
+.stars{color:#f5a623;font-size:22px;letter-spacing:2px}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.plan{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:24px;display:flex;flex-direction:column}
+.plan.hot{background:var(--ink);color:#fff;box-shadow:8px 8px 0 var(--hot)}
+.plan .price{font-family:"Archivo Black";font-size:40px;margin:8px 0}
+.plan .price small{font-family:Inter;font-size:15px;font-weight:600;opacity:.7}
+.plan ul{list-style:none;margin:12px 0 20px;flex:1}
+.plan li{padding:6px 0;border-bottom:1px solid rgba(128,128,128,.25);font-size:15px}
+.plan li:before{content:"✓ ";color:var(--hot);font-weight:800}
+.plan .btn{text-align:center}
+.tag{display:inline-block;background:var(--hot);color:#fff;font-size:12px;font-weight:800;padding:3px 8px;border-radius:5px;align-self:flex-start}
+.form{background:var(--ink);color:#fff;border-radius:18px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.form input,.form select{width:100%;padding:13px;border-radius:8px;border:none;font-size:16px;margin-bottom:10px}
+.form p{color:#cfcfd8}
+.note{font-size:13px;color:#9a9aa6;margin-top:6px}
+footer{padding:30px 0;text-align:center;color:var(--mute);font-size:14px}
+@media(max-width:860px){.hero .wrap,.form,.book{grid-template-columns:1fr}.grid3,.plans{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.cover{height:220px;max-width:200px}}
+</style>
 </head>
-<body class="antialiased">
+<body>
+<header><div class="wrap"><div class="logo">MARKETING<span>EN</span>LÍNEA</div><a class="btn" href="#diagnostico">Diagnóstico gratis</a></div></header>
 
-    <!-- Header -->
-    <header class="bg-white shadow-sm py-4">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-sky-700">marketingenlinea.com</a>
-            <nav>
-                <!-- Navigation links could go here if needed, for this single page, it's minimal -->
-            </nav>
-        </div>
-    </header>
+<div class="hero"><div class="wrap">
+  <div>
+    <span class="kicker">Ahora mismo, en tu ciudad</span>
+    <h1>Tu cliente buscó tu servicio.<br>Llamó a <em>los 3 de arriba.</em></h1>
+    <p>Tú estabas en el puesto 7. Nadie baja hasta ahí. Te subimos a los 3 primeros de Google Maps y convertimos esas visitas en mensajes de WhatsApp.</p>
+    <a class="btn" href="#diagnostico">Quiero saber en qué puesto estoy →</a>
+    <div class="rule">La regla es simple: <b>top 3 = te llaman</b>. Puesto 4 o más = no existes.</div>
+  </div>
+  <div class="maps" aria-label="Ejemplo de resultados de Google Maps">
+    <div class="search">🔍 dentista cerca de mí</div>
+    <div class="pin"><div class="n">1</div><div><b>Competidor A</b><small>★ 4,8 · 212 reseñas · Abierto</small></div></div>
+    <div class="pin"><div class="n">2</div><div><b>Competidor B</b><small>★ 4,7 · 158 reseñas · Abierto</small></div></div>
+    <div class="pin"><div class="n">3</div><div><b>Competidor C</b><small>★ 4,6 · 97 reseñas · Abierto</small></div></div>
+    <div class="cut">— aquí deja de mirar la gente —</div>
+    <div class="pin you"><div class="n">7</div><div><b>TU NEGOCIO</b><small>★ 4,9 · 14 reseñas · nadie llega aquí</small></div></div>
+  </div>
+</div></div>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-sky-600 to-cyan-500 text-white py-16 md:py-24 text-center rounded-b-3xl shadow-xl">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
-                Tu negocio ya es líder en el mundo físico. Es hora de dominar el mundo digital.
-            </h1>
-            <p class="text-xl md:text-2xl font-light mb-8 opacity-90">
-                Una sola plataforma con tu marca, que automatiza tus ventas, acelera tus procesos y pone tu empresa al frente… sin contratar más personal.
-            </p>
-            <a href="#cta" class="btn-primary">
-                📆 Agenda una demo gratuita
-            </a>
-        </div>
-    </section>
+<section><div class="wrap">
+  <h2>Por qué somos distintos a una agencia</h2>
+  <p class="lead">Las agencias cobran por horas y por publicaciones bonitas. Nosotros cobramos por subir de puesto y te mostramos cuántos clientes llegaron.</p>
+  <div class="grid3">
+    <div class="card"><div class="big">IA 24/7</div><h3>Agentes que trabajan sin parar</h3><p>Ficha de Google, reseñas, publicaciones y respuestas por WhatsApp, operadas con agentes de inteligencia artificial. Por eso cuesta una fracción de una agencia.</p></div>
+    <div class="card"><div class="big">USD</div><h3>Hablamos en dinero, no en "likes"</h3><p>Cada mes ves cuánto pagaste por cliente y cuántos dólares volvieron por cada dólar invertido.</p></div>
+    <div class="card"><div class="big">★ 4,8</div><h3>Escribimos el libro</h3><p>Nuestro método está en <i>Marketing en Línea: la guía para principiantes</i>, calificado con 4,8 estrellas en Amazon.</p></div>
+  </div>
+</div></section>
 
-    <!-- Slogan Section -->
-    <section class="py-12 md:py-16 bg-slate-50">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-semibold text-sky-800">
-                Convierte cada contacto en una venta.
-            </h2>
-        </div>
-    </section>
+<section class="band"><div class="wrap">
+  <h2>Cómo funciona</h2>
+  <p class="lead" style="color:#1f2a00">Cuatro pasos. Tú sigues atendiendo tu negocio.</p>
+  <div class="steps">
+    <div class="step"><h3>Diagnóstico gratis</h3><p>En 48 horas te decimos en qué puesto estás y quién te está ganando.</p></div>
+    <div class="step"><h3>Ficha perfecta</h3><p>Google Business completo: fotos, categorías, horarios, servicios y palabras clave.</p></div>
+    <div class="step"><h3>Reseñas y contenido</h3><p>Sistema para pedir reseñas a tus clientes reales y publicaciones semanales.</p></div>
+    <div class="step"><h3>WhatsApp que vende</h3><p>Cada visita termina en un chat que responde al instante y agenda.</p></div>
+  </div>
+</div></section>
 
-    <!-- Benefits Section -->
-    <section class="py-16 md:py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="section-title">✨ ¿Qué puede hacer por tu empresa?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card">
-                    <div class="flex items-center mb-4">
-                        <span class="text-4xl mr-3">😴</span> <!-- Emoji for icon -->
-                        <h3 class="text-xl font-semibold text-sky-700">Captura prospectos mientras duermes</h3>
-                    </div>
-                    <p class="text-slate-600">Tus páginas, formularios y WhatsApp seguirán trabajando incluso fuera de horario.</p>
-                </div>
-                <div class="card">
-                    <div class="flex items-center mb-4">
-                        <span class="text-4xl mr-3">🔍</span> <!-- Emoji for icon -->
-                        <h3 class="text-xl font-semibold text-sky-700">Nunca más pierdas un cliente interesado</h3>
-                    </div>
-                    <p class="text-slate-600">Sigue cada contacto con un embudo visual y recordatorios automáticos.</p>
-                </div>
-                <div class="card">
-                    <div class="flex items-center mb-4">
-                        <span class="text-4xl mr-3">💬</span> <!-- Emoji for icon -->
-                        <h3 class="text-xl font-semibold text-sky-700">Automatiza respuestas y citas sin perder el toque humano</h3>
-                    </div>
-                    <p class="text-slate-600">Responde con velocidad profesional. Cada cliente siente que hablas solo con él.</p>
-                </div>
-                <div class="card">
-                    <div class="flex items-center mb-4">
-                        <span class="text-4xl mr-3">🚀</span> <!-- Emoji for icon -->
-                        <h3 class="text-xl font-semibold text-sky-700">Lanza campañas sin depender de nadie</h3>
-                    </div>
-                    <p class="text-slate-600">Promociona equipos, ofertas o eventos con correos y mensajes personalizados en segundos.</p>
-                </div>
-                <div class="card lg:col-span-2 mx-auto max-w-2xl">
-                    <div class="flex items-center mb-4">
-                        <span class="text-4xl mr-3">📊</span> <!-- Emoji for icon -->
-                        <h3 class="text-xl font-semibold text-sky-700">Toma el control total del proceso comercial</h3>
-                    </div>
-                    <p class="text-slate-600">Desde el primer clic hasta el cierre de la venta: todo en una sola plataforma.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section><div class="wrap book">
+  <div class="cover"><span style="font-size:13px;opacity:.8">Ney Torres y coautores</span><b>Marketing en Línea</b><span style="font-size:13px">La guía para principiantes</span></div>
+  <div>
+    <div class="stars">★★★★★</div>
+    <h2>Los sistemas de las grandes agencias, explicados paso a paso</h2>
+    <p class="lead">4,8 de 5 estrellas con 24 calificaciones en Amazon. Es el mismo método que aplicamos a tu negocio.</p>
+    <a class="btn" href="https://www.amazon.com/s?k=Marketing+en+L%C3%ADnea+Ney+Torres&i=digital-text">Ver el libro en Amazon</a>
+  </div>
+</div></section>
 
-    <!-- Why Choose Us Section -->
-    <section class="py-16 md:py-20 bg-slate-50">
-        <div class="container mx-auto px-4">
-            <h2 class="section-title">🏆 ¿Por qué nuestros clientes eligen esta solución?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="card flex items-start">
-                    <span class="text-2xl mr-3 text-sky-600">✔️</span>
-                    <p class="text-lg text-slate-700">No necesitan contratar más personal.</p>
-                </div>
-                <div class="card flex items-start">
-                    <span class="text-2xl mr-3 text-sky-600">✔️</span>
-                    <p class="text-lg text-slate-700">Tienen control total sin depender de agencias.</p>
-                </div>
-                <div class="card flex items-start">
-                    <span class="text-2xl mr-3 text-sky-600">✔️</span>
-                    <p class="text-lg text-slate-700">Pueden ver resultados desde el primer mes.</p>
-                </div>
-                <div class="card flex items-start">
-                    <span class="text-2xl mr-3 text-sky-600">✔️</span>
-                    <p class="text-lg text-slate-700">Usan su propia marca, no la de un tercero.</p>
-                </div>
-                <div class="card flex items-start md:col-span-2 lg:col-span-1">
-                    <span class="text-2xl mr-3 text-sky-600">✔️</span>
-                    <p class="text-lg text-slate-700">Todo queda centralizado y ordenado.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section style="padding-top:0"><div class="wrap">
+  <h2>Planes</h2>
+  <p class="lead">Sin contratos largos. Si en 90 días no subiste de puesto, el mes siguiente es gratis.</p>
+  <div class="plans">
+    <div class="plan"><span class="tag" style="background:var(--blue)">Empieza aquí</span><h3 style="margin-top:10px">Diagnóstico</h3><div class="price">USD 0</div>
+      <ul><li>Tu puesto actual en Maps</li><li>Tus 3 competidores y por qué ganan</li><li>Lista de arreglos rápidos</li></ul>
+      <a class="btn" href="#diagnostico">Pedirlo</a></div>
+    <div class="plan hot"><span class="tag">Más pedido</span><h3 style="margin-top:10px">Mapas</h3><div class="price">USD 149 <small>/ mes</small></div>
+      <ul><li>Ficha de Google optimizada</li><li>Sistema de reseñas</li><li>4 publicaciones al mes</li><li>Reporte mensual en dólares</li></ul>
+      <a class="btn" href="#diagnostico">Quiero subir</a></div>
+    <div class="plan"><span class="tag" style="background:var(--ink)">Todo incluido</span><h3 style="margin-top:10px">Crecimiento</h3><div class="price">USD 349 <small>/ mes</small></div>
+      <ul><li>Todo lo del plan Mapas</li><li>WhatsApp con respuesta automática</li><li>Anuncios en Google y Meta (presupuesto aparte)</li><li>Página web de conversión</li></ul>
+      <a class="btn" href="#diagnostico">Hablemos</a></div>
+  </div>
+</div></section>
 
-    <!-- Target Audience Section -->
-    <section class="py-16 md:py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="section-title">💼 Diseñada para empresas que ya venden, pero quieren escalar.</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                <div class="card">
-                    <div class="flex items-center mb-3">
-                        <span class="text-3xl mr-3 text-emerald-600">✅</span>
-                        <h3 class="text-xl font-semibold text-sky-700">Producto probado y buena reputación</h3>
-                    </div>
-                    <p class="text-slate-600">Esta solución es ideal para negocios que tienen un producto probado y buena reputación.</p>
-                </div>
-                <div class="card">
-                    <div class="flex items-center mb-3">
-                        <span class="text-3xl mr-3 text-emerald-600">✅</span>
-                        <h3 class="text-xl font-semibold text-sky-700">Invierten en fuerza comercial o ferias</h3>
-                    </div>
-                    <p class="text-slate-600">Ya invierten en fuerza comercial o ferias, pero sienten que el canal digital aún no despega.</p>
-                </div>
-                <div class="card md:col-span-2">
-                    <div class="flex items-center mb-3">
-                        <span class="text-3xl mr-3 text-emerald-600">✅</span>
-                        <h3 class="text-xl font-semibold text-sky-700">Quieren más orden, más leads, y menos desgaste operativo</h3>
-                    </div>
-                    <p class="text-slate-600">Buscan más orden, más leads, y menos desgaste operativo en sus procesos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="diagnostico" style="padding-top:0"><div class="wrap">
+  <div class="form">
+    <div>
+      <h2>¿En qué puesto estás hoy?</h2>
+      <p>Déjanos tu negocio y tu ciudad. Te escribimos por WhatsApp con tu diagnóstico en 48 horas. Solo tomamos 5 negocios nuevos por mes.</p>
+    </div>
+    <form id="f">
+      <input id="neg" required placeholder="Nombre de tu negocio">
+      <input id="ciu" required placeholder="Ciudad (ej. Quito)">
+      <select id="rub"><option>Salud / consultorio</option><option>Restaurante / cafetería</option><option>Servicios profesionales</option><option>Tienda / comercio</option><option>Otro</option></select>
+      <button class="btn" style="width:100%" type="submit">Enviar por WhatsApp</button>
+      <div class="note">Se abre WhatsApp con tu mensaje listo: +593 98 559 1732</div>
+    </form>
+  </div>
+</div></section>
 
-    <!-- Investment Section -->
-    <section class="py-16 md:py-20 bg-slate-100">
-        <div class="container mx-auto px-4 text-center max-w-2xl">
-            <h2 class="section-title">💸 Inversión</h2>
-            <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
-                <p class="text-2xl md:text-3xl font-bold text-sky-800 mb-4">
-                    Activación inicial personalizada: <span class="text-emerald-600">$350</span>
-                </p>
-                <p class="text-2xl md:text-3xl font-bold text-sky-800 mb-6">
-                    Plataforma mensual (marca blanca): <span class="text-emerald-600">$297</span>
-                </p>
-                <p class="text-lg text-slate-600 font-medium">
-                    Sin contratos forzosos. Resultados visibles desde el primer mes.
-                </p>
-            </div>
-            <p class="text-md text-slate-500">
-                *Precios sujetos a cambios. Consulta para ofertas personalizadas.
-            </p>
-        </div>
-    </section>
+<footer><div class="wrap">marketingenlinea.com · Quito, Ecuador</div></footer>
 
-    <!-- Final CTA Section -->
-    <section id="cta" class="bg-gradient-to-r from-sky-700 to-cyan-600 text-white py-16 md:py-24 text-center rounded-t-3xl shadow-xl">
-        <div class="container mx-auto px-4 max-w-3xl">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                📆 Agenda una demo gratuita de 15 minutos
-            </h2>
-            <p class="text-xl md:text-2xl font-light mb-10 opacity-90">
-                Y descubre cómo tu empresa puede vender más, automatizarse y crecer sin complicaciones.
-            </p>
-            <a href="#" class="btn-primary bg-white text-sky-700 hover:bg-sky-50 hover:text-sky-800">
-                ¡Agenda tu demo ahora!
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 text-center">
-        <div class="container mx-auto px-4">
-            <p>&copy; 2025 marketingenlinea.com. Todos los derechos reservados.</p>
-            <p class="mt-2 text-sm">Potenciado por IA para tu éxito digital.</p>
-        </div>
-    </footer>
-
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+  e.preventDefault();
+  var t='Hola, quiero mi diagnóstico gratis de Google Maps.\nNegocio: '+document.getElementById('neg').value+'\nCiudad: '+document.getElementById('ciu').value+'\nRubro: '+document.getElementById('rub').value;
+  window.location.href='https://wa.me/593985591732?text='+encodeURIComponent(t);
+});
+</script>
 </body>
 </html>
